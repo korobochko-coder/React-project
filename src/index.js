@@ -4,6 +4,7 @@ import "./index.css";
 import SearchEngine from "./SearchEngine";
 import LocationButton from "./LocationButton";
 import CurrentWeather from "./CurrentWeather";
+import Creator from "./Creator";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -29,6 +30,7 @@ root.render(
         wind="8"
       />
     </div>
+    <Creator />
   </React.StrictMode>
 );
 
