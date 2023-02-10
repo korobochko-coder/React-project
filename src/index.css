@@ -14,4 +14,57 @@ code {
 
 .AppContainer {
   border: 1px solid black;
+  padding: 16px;
+  margin: 30px auto;
+  max-width: 450px;
+  background-color: black;
+}
+
+.SearchEngine input {
+  background-color: black;
+  border: solid aliceblue 1px;
+  border-radius: 15px;
+}
+
+.LocationButton button {
+  background-color: black;
+  border: hidden;
+  color: aliceblue;
+}
+
+.CurrentWeather {
+  margin-top: 30px;
+  padding: 20px 30px;
+  background-color: #bad7eb;
+  border-radius: 20px;
+}
+
+.CurrentWeather ul {
+  list-style: none;
+}
+
+.CurrentWeather li {
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.CurrentWeather img {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+}
+
+.CurrentWeather #temperature {
+  font-size: 40px;
+}
+
+.CurrentWeather #unit {
+  position: relative;
+  top: -15px;
+  font-size: 20px;
+}
+
+.Creator {
+  text-align: center;
+  font-size: 10px;
 }

@@ -5,22 +5,32 @@ export default function CurrentWeather(props) {
     <div className="CurrentWeather">
       <div className="container">
         <div className="row">
+          <h1>Paris</h1>
+        </div>
+        <div className="row">
           <div className="col-6">
-            <h1>Paris</h1>
             <ul>
               <li>
                 {props.day}, {props.time}
               </li>
               <li>{props.description}</li>
-              <li>Humidity: {props.humidity}%</li>
-              <li>Wind: {props.wind}km/h</li>
+              <li>
+                <strong>Humidity:</strong> {props.humidity}%
+              </li>
+              <li>
+                <strong>Wind:</strong> {props.wind}km/h
+              </li>
             </ul>
           </div>
-          <div className="col-6">
+          <div className="col-3">
             <img
               src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
               alt="Weather Icon"
             />
+          </div>
+          <div className="col-3">
+            <span id="temperature">{props.temperature}</span>
+            <span id="unit">°C</span>
           </div>
         </div>
       </div>

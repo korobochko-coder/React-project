@@ -4,7 +4,7 @@ export default function SearchEngine() {
   return (
     <div className="SearchEngine">
       <form>
-        <input type="search" placeholder="Type your city" />
+        <input type="search" placeholder=" 🔍    Type your city" />
       </form>
     </div>
   );

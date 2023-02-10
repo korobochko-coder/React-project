@@ -28,6 +28,7 @@ root.render(
         description="Sunny"
         humidity="10"
         wind="8"
+        temperature="16"
       />
     </div>
     <Creator />
