@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import DateAndTime from "./DateAndTime";
 
 export default function CurrentWeather(props) {
   let [ready, setReady] = useState(false);
@@ -8,6 +9,7 @@ export default function CurrentWeather(props) {
   function handleResponse(response) {
     console.log(response.data);
     setWeatherData({
+      date: new Date(response.data.time * 1000),
       description: response.data.condition.description,
       humidity: response.data.temperature.humidity,
       wind: response.data.wind.speed,
@@ -27,7 +29,7 @@ export default function CurrentWeather(props) {
             <div className="col-6">
               <ul>
                 <li>
-                  {props.day}, {props.time}
+                  <DateAndTime date={weatherData.date} />
                 </li>
                 <li>{weatherData.description}</li>
                 <li>

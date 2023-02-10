@@ -23,7 +23,7 @@ root.render(
           </div>
         </div>
       </div>
-      <CurrentWeather day="Monday" time="12:50" />
+      <CurrentWeather />
     </div>
     <Creator />
   </React.StrictMode>
