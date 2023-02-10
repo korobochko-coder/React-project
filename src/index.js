@@ -7,6 +7,7 @@ import CurrentWeather from "./CurrentWeather";
 import Creator from "./Creator";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
+import axios from "axios";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -22,14 +23,7 @@ root.render(
           </div>
         </div>
       </div>
-      <CurrentWeather
-        day="Monday"
-        time="12:50"
-        description="Sunny"
-        humidity="10"
-        wind="8"
-        temperature="16"
-      />
+      <CurrentWeather day="Monday" time="12:50" />
     </div>
     <Creator />
   </React.StrictMode>
