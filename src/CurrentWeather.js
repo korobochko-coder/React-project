@@ -6,7 +6,7 @@ export default function CurrentWeather(props) {
     <div className="CurrentWeather">
       <div className="container">
         <div className="row">
-          <h1>{props.data.city}</h1>
+          <h1>{props.city}</h1>
         </div>
         <div className="row">
           <div className="col-6">

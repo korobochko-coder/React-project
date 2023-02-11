@@ -22,14 +22,9 @@ code {
 
 .SearchEngine input {
   background-color: black;
+  color: aliceblue;
   border: solid aliceblue 1px;
   border-radius: 15px;
-}
-
-.LocationButton button {
-  background-color: black;
-  border: hidden;
-  color: aliceblue;
 }
 
 .CurrentWeather {
